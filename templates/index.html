@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        text-transform: capitalize;
+      }
+    </style>
+    <title>Meal Plan</title>
+  </head>
+  <body>
+    <h1>Meal Plan</h1>
+    <ul>
+      {% for day, meals in plan.items() %}
+      <li>
+        <h3>{{ day }}</h3>
+        <ul>
+          {% for meal_name, meal in meals.items() %}
+          <li>
+            {{ meal_name }}:
+            <a href="{{ meal }}.html">{{ meal_data[meal]['name'] }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

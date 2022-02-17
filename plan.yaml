@@ -1,0 +1,21 @@
+monday:
+  breakfast: breakfast-bars
+  dinner: black-bean-soup
+tuesday:
+  breakfast: breakfast-bars
+  dinner: black-bean-soup
+wednesday:
+  breakfast: breakfast-bars
+  dinner: breakfast-for-dinner
+thursday:
+  breakfast: breakfast-bars
+  dinner: red-beans-and-rice
+friday:
+  breakfast: apple-pie-porridge
+  dinner: mushroom-and-wild-rice-soup
+saturday:
+  breakfast: breakfast-bars
+  dinner: mac-and-cheese
+sunday:
+  breakfast: breakfast-bars
+  dinner: black-bean-soup
