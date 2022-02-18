@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <link rel="stylesheet" href="style.css" />
     <title>{{ name }}</title>
-</head>
-<body>
-    <a href="index.html">◄ BACK TO WEEK PLAN</a>
-    <h1 style="text-transform: capitalize;">{{ name }}</h1>
+  </head>
+  <body>
+    <a class="back" href="index.html">BACK TO WEEK PLAN</a>
+    <h1>{{ name }}</h1>
     <h3>Ingredients</h3>
     <ul>
-    {% for item in ingredients %}
-        <li>{{ item }}</li>
-    {% endfor %}
+      {% for item in ingredients %}
+      <li>{{ item }}</li>
+      {% endfor %}
     </ul>
     <h3>Steps</h3>
     <ol>
-    {% for item in steps %}
-        <li>{{ item }}</li>
-    {% endfor %}
-    </ul>
-</body>
+      {% for item in steps %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ol>
+  </body>
 </html>

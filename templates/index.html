@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      * {
-        text-transform: capitalize;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
     <title>Meal Plan</title>
   </head>
-  <body>
+  <body class="capitalize">
     <h1>Meal Plan</h1>
     <ul>
       {% for day, meals in plan.items() %}
