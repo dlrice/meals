@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Shopping list</title>
+  </head>
+  <body>
+    <a href="index.html">◀ BACK TO WEEK PLAN</a>
+    <h1>Weekly Shopping List</h1>
+    <ul>
+      {% for item in items %}
+      <li>{{ item.name }} ({{ '%g' | format(item.quantity) }}{% if item.unit %}{{ item.unit | trim }}{% endif %})</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
