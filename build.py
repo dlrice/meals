@@ -37,6 +37,7 @@ def parse_ingredient(ingredient):
             "cup",
             "g",
             "handful",
+            "L",
             "ml",
             "square",
             "stalks",
@@ -45,7 +46,7 @@ def parse_ingredient(ingredient):
             "tsp",
         ]
     )
-    p = re.compile(rf"(?P<quantity>[0-9./]+)\s?(?P<units>{p_units})?(?P<item>.*)")
+    p = re.compile(rf"(?P<quantity>[0-9./]+)\s?(?P<units>{p_units})?\s(?P<item>.*)")
     m = p.match(ingredient)
     if not m:
         return

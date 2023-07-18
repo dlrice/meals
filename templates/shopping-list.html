@@ -9,7 +9,7 @@
     <h1>Weekly Shopping List</h1>
     <ul>
       {% for item in items %}
-      <li>{{ item.name }} ({{ '%g' | format(item.quantity) }}{% if item.unit %}{{ item.unit | trim }}{% endif %})</li>
+      <li>{{ item.name }} ({{ '%g' | format(item.quantity) }}{% if item.unit %} {{ item.unit | trim }}{% endif %})</li>
       {% endfor %}
     </ul>
   </body>
