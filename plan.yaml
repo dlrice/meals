@@ -1,21 +1,77 @@
 monday:
-  breakfast: breakfast-bars
-  dinner: ribollita
+  breakfast:
+    name: porridge
+    servings: 3
+  lunch:
+    name: black-bean-soup
+    servings: 3
+    leftovers: true
+  dinner:
+    name: ribollita
+    servings: 3
+    leftovers: True
 tuesday:
-  breakfast: breakfast-bars
-  dinner: black-bean-soup
+  breakfast:
+    name: porridge
+    servings: 3
+  lunch:
+    name: ribollita
+    servings: 3
+    leftovers: true
+  dinner:
+    name: fry-up
+    servings: 3
 wednesday:
-  breakfast: breakfast-bars
-  dinner: breakfast-for-dinner
+  breakfast:
+    name: porridge
+    servings: 3
+  lunch:
+    name: ribollita
+    servings: 3
+    leftovers: true
+  dinner:
+    name: red-beans-and-rice
+    servings: 3
 thursday:
-  breakfast: breakfast-bars
-  dinner: red-beans-and-rice
+  breakfast:
+    name: porridge
+    servings: 3
+  lunch:
+    name: red-beans-and-rice
+    leftovers: true
+  dinner:
+    name: sri-lankan-curry
+    servings: 3
 friday:
-  breakfast: apple-pie-porridge
-  dinner: mushroom-and-wild-rice-soup
+  breakfast:
+    name: porridge
+    servings: 3
+  lunch:
+    name: sri-lankan-curry
+    servings: 3
+    leftovers: true
+  dinner:
+    name: mac-and-cheese
+    servings: 3
 saturday:
-  breakfast: breakfast-bars
-  dinner: mac-and-cheese
+  breakfast:
+    name: banana-pancake
+    servings: 4
+  lunch:
+    name: mac-and-cheese
+    servings: 3
+    leftovers: true
+  dinner:
+    name: mushroom-and-wild-rice-soup
+    servings: 3
 sunday:
-  breakfast: breakfast-bars
-  dinner: black-bean-soup
+  breakfast:
+    name: fry-up
+    servings: 3
+  lunch:
+    name: mushroom-and-wild-rice-soup
+    servings: 3
+    leftovers: true
+  dinner:
+    name: black-bean-soup
+    servings: 3

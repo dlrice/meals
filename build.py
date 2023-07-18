@@ -25,7 +25,7 @@ def write_template(path, template, d):
         f.write(template.render(**d))
 
 
-def main():
+def build():
     shutil.rmtree(build_path, ignore_errors=True)
     os.makedirs(build_path)
     shutil.copy("./style.css", build_path)
@@ -49,4 +49,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    build()

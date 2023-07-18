@@ -14,7 +14,11 @@
           {% for meal_name, meal in meals.items() %}
           <li>
             {{ meal_name }}:
-            <a href="{{ meal }}.html">{{ meal_data[meal]['name'] }}</a>
+              <a href="{{ meal['name'] }}.html">{{ meal['name'] | replace("-", " ")}}
+              </a>
+              {% if meal['leftovers'] %}
+                (leftovers)
+              {% endif %}
           </li>
           {% endfor %}
         </ul>
