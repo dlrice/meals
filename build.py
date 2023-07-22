@@ -65,7 +65,6 @@ def get_weekly_items():
     for day in plan.values():
         for plan_meal in day.values():
             meal_data = get_yaml(f"./meals/{plan_meal['name']}.yaml")
-            print(plan_meal)
             plan_servings = plan_meal["servings"]
             meal_servings = meal_data["servings"]
             servings_ratio = plan_servings / meal_servings
@@ -74,7 +73,9 @@ def get_weekly_items():
                 ingredient_to_quantity[i] += q * servings_ratio
                 if u:
                     if i in ingredient_to_unit:
-                        assert ingredient_to_unit[i] == u
+                        assert (
+                            ingredient_to_unit[i] == u
+                        ), f"{ingredient}:{ingredient_to_unit[i]} != {u}"
                     else:
                         ingredient_to_unit[i] = u
     return [
@@ -97,7 +98,6 @@ def build():
 
     meal_data = {}
     for meal_path in glob("./meals/*.yaml"):
-        print(meal_path)
         meal_filename = os.path.split(meal_path)[1]
         meal_name = os.path.splitext(meal_filename)[0]
         meal_html_name = meal_name + ".html"

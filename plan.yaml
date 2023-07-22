@@ -1,32 +1,31 @@
 monday:
   breakfast:
     name: porridge
-    servings: 3
+    servings: 2
   lunch:
     name: black-bean-soup
     servings: 3
     leftovers: true
   dinner:
-    name: ribollita
+    name: egg-and-potato-curry
     servings: 3
-    leftovers: True
 tuesday:
   breakfast:
-    name: porridge
-    servings: 3
+    name: yoghurt-with-fruit
+    servings: 2
   lunch:
-    name: ribollita
+    name: egg-and-potato-curry
     servings: 3
     leftovers: true
   dinner:
-    name: fry-up
+    name: mushroom-spaghetti
     servings: 3
 wednesday:
   breakfast:
     name: porridge
-    servings: 3
+    servings: 2
   lunch:
-    name: ribollita
+    name: mushroom-spaghetti
     servings: 3
     leftovers: true
   dinner:
@@ -34,22 +33,22 @@ wednesday:
     servings: 3
 thursday:
   breakfast:
-    name: porridge
-    servings: 3
+    name: yoghurt-with-fruit
+    servings: 2
   lunch:
     name: red-beans-and-rice
     servings: 3
     leftovers: true
   dinner:
-    name: sri-lankan-curry
-    servings: 3
+    name: roasted-salmon-and-beans
+    servings: 2
 friday:
   breakfast:
     name: porridge
-    servings: 3
+    servings: 2
   lunch:
-    name: sri-lankan-curry
-    servings: 3
+    name: roasted-salmon-and-beans
+    servings: 2
     leftovers: true
   dinner:
     name: mac-and-cheese
@@ -63,16 +62,16 @@ saturday:
     servings: 3
     leftovers: true
   dinner:
-    name: mushroom-and-wild-rice-soup
+    name: spanish-tortilla
     servings: 3
 sunday:
   breakfast:
     name: fry-up
     servings: 3
   lunch:
-    name: mushroom-and-wild-rice-soup
+    name: spanish-tortilla
     servings: 3
     leftovers: true
   dinner:
-    name: black-bean-soup
+    name: lasagne-roll-ups
     servings: 3
