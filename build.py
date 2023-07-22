@@ -60,22 +60,23 @@ def parse_ingredient(ingredient):
 
 def get_weekly_items():
     plan = get_yaml(plan_path)
-    L = []
-    for meal_path in glob("./meals/*.yaml"):
-        meal = get_yaml(meal_path)
-        L += meal["ingredients"]
     ingredient_to_quantity = defaultdict(float)
     ingredient_to_unit = {}
-    for el in set(L):
-        q, u, i = parse_ingredient(el)
-        if u:
-            if i in ingredient_to_unit:
-                if ingredient_to_unit[i] != u:
-                    print(f"{i}: {ingredient_to_unit[i]} != {u}")
-                    continue
-            else:
-                ingredient_to_unit[i] = u
-        ingredient_to_quantity[i] += q
+    for day in plan.values():
+        for plan_meal in day.values():
+            meal_data = get_yaml(f"./meals/{plan_meal['name']}.yaml")
+            print(plan_meal)
+            plan_servings = plan_meal["servings"]
+            meal_servings = meal_data["servings"]
+            servings_ratio = plan_servings / meal_servings
+            for ingredient in meal_data["ingredients"]:
+                q, u, i = parse_ingredient(ingredient)
+                ingredient_to_quantity[i] += q * servings_ratio
+                if u:
+                    if i in ingredient_to_unit:
+                        assert ingredient_to_unit[i] == u
+                    else:
+                        ingredient_to_unit[i] = u
     return [
         {
             "quantity": ingredient_to_quantity[i],
