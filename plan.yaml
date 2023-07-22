@@ -38,6 +38,7 @@ thursday:
     servings: 3
   lunch:
     name: red-beans-and-rice
+    servings: 3
     leftovers: true
   dinner:
     name: sri-lankan-curry
